@@ -14,8 +14,8 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 # Environment variables
 FILE_PATH = os.environ.get('FILE_PATH', './.cache')
 UUID = os.environ.get('UUID', '550e8400-e29b-41d4-a716-446655440000')  
-ARGO_DOMAIN = os.environ.get('ARGO_DOMAIN', 'stm.loea.dpdns.org')       
-ARGO_AUTH = os.environ.get('ARGO_AUTH', 'eyJhIjoiMTI1NWIzNDYxYjIyMzNhYjJmZGQxYTNjNzBkOTY5MDYiLCJ0IjoiYzljYWU4ODUtYWVhZC00ZjYyLThlZDEtMzQ1ZjA1Y2EyNjY1IiwicyI6IlpqRXlZMlUzWm1NdE5EUTNNUzAwWkRGbUxUaGlPRE10Wm1Ga01tRTNOV014WVRJMCJ9')            
+ARGO_DOMAIN = os.environ.get('ARGO_DOMAIN', '')       
+ARGO_AUTH = os.environ.get('ARGO_AUTH', '')            
 ARGO_PORT = int(os.environ.get('ARGO_PORT', '8080'))   
 PORT = int(os.environ.get('SERVER_PORT') or os.environ.get('PORT') or 3000) 
 
